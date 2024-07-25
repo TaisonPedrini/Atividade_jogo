@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Click</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="cabecalho">
+
+        <div id="startRestart">
+            <!--Parte para iniciar e reiniciar o jogo-->
+            <img src="assets/img/linha-de-largada.png" alt="iniciar/reiniciar">
+        </div>
+
+        <div id="marcadorPontos">
+            <!--Marcador de pontos-->
+
+            <img src="assets/img/velocimetro.png" alt="">
+
+            <div>
+                <h2 id="pontos">0 pts</h2>
+            </div>
+
+        </div>
+
+        <div id="valorClick">
+            <!--Valor do click-->
+
+            <img src="assets/img/mudanca-de-marcha.png" alt="">
+
+            <div>
+                <h2 id="clickBase">Click = +1 pts</h2>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="corpo">
+        <div class="botao" id="acelera">
+            <!--Botão do jogo-->
+
+            <img src="assets/img/botão-removebg.png" alt="">
+
+            <h1>ACELERA !!!</h1>
+
+        </div>
+
+        <div class="upgardes">
+            <!--Área de upgrades-->
+
+            <h1>Tem que <br>abastecer !!!</h1>
+
+            <div class="abastecer" id="abastecerUm">
+                <!--Abastecer 1-->
+
+                <div class="imagemGalao">
+                        <img src="assets/img/galão.png" alt="">
+
+                        <h2>ABASTECER</h2>
+
+                        <img id="imgInvertida" src="assets/img/galão.png" alt="">
+                </div>
+
+                <h3 class="menosVermelho">-10 pts</h3>
+
+                <h3 class="maisVerde">Click = +1 pts</h3>
+
+                <div class="marcadorRepCompra" id="repUm">
+                    <p id="contUm">x0</p>
+                </div>
+
+            </div>
+
+            <div class="abastecer" id="abastecerDois">
+                <!--Abastecer 2-->
+
+                <div class="imagemGalao">
+                    <img src="assets/img/galão.png" alt="">
+
+                    <h2>ABASTECER</h2>
+
+                    <img id="imgInvertida" src="assets/img/galão.png" alt="">
+                </div>
+
+                <h3 class="menosVermelho">-50 pts</h3>
+
+                 <h3 class="maisVerde">Click = +8 pts</h3>
+
+                <div class="marcadorRepCompra" id="repDois">
+                    <p id="contDois">x0</p>
+                </div>
+
+            </div>
+            
+            <div class="abastecer" id="abastecerTres">
+                <!--Abastecer 3-->
+
+                <div class="imagemGalao">
+                    <img src="assets/img/galão.png" alt="">
+
+                    <h2>ABASTECER</h2>
+
+                    <img id="imgInvertida" src="assets/img/galão.png" alt="">
+                </div>
+
+                <h3 class="menosVermelho">-100 pts</h3>
+
+                <h3 class="maisVerde">Click = +32 pts</h3>
+
+                <div class="marcadorRepCompra" id="repTres">
+                    <p id="contTres">x0</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Footer-->
+        <h3 id="rodape">Desenvolvido por Taison Pedrini</h3>
+
+    </div>
+    
+    <!--Código JS-->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
